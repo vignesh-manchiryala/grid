@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid</title>
+    <style>
+        #bittu{
+            background-color: blue;
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-template-rows: 90px 90px 90px;
+            gap: 10px;
+            padding: 10px;
+        
+        }
+        #bittu div{
+            background-color: lightblue;
+            text-align: center;
+            padding-top: 40px;
+         }
+
+    </style>
+</head>
+<body>
+    <div id="bittu">
+        <div style="grid-column: 1/4;">header</div>
+        <div style="grid-row: 2/4;">menu</div>
+        <div>main</div>
+        <div>right</div>
+        <div style="grid-column: 2/4;">footer</div>
+    </div>
+</body>
+</html>
